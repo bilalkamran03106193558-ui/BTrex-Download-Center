@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ModBrowser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="logo.png" class="logo" alt="Logo" />
+      <h1>ModBrowser</h1>
+    </div>
+    <div class="header-right">
+      <a href="https://youtube.com/YourChannel" class="youtube-link-top">
+        <img src="small-logo.png" class="small-logo" alt="YT Logo" /> My Channel
+      </a>
+    </div>
+  </header>
+
+  <div class="categories">
+    <div class="category active" data-tab="resourcepacks">Resource Packs</div>
+    <div class="category" data-tab="mods">Mods</div>
+    <div class="category" data-tab="shaders">Shaders</div>
+    <div class="category" data-tab="datapacks">Data Packs</div>
+  </div>
+
+  <div class="search-perpage-container">
+    <input type="text" id="search-global" placeholder="Search files..." />
+  </div>
+
+  <!-- Page selector under search bar -->
+  <div id="pagination-top" class="pagination-container"></div>
+
+  <div class="content-area">
+    <div id="resourcepacks" class="file-list"></div>
+    <div id="mods" class="file-list hidden"></div>
+    <div id="shaders" class="file-list hidden"></div>
+    <div id="datapacks" class="file-list hidden"></div>
+
+    <div id="pagination-global" class="pagination-container"></div>
+  </div>
+
+  <footer>
+    <a href="https://youtube.com/YourChannel" class="youtube-link">
+      <img src="small-logo.png" class="small-logo" alt="YT Logo" /> My Channel
+    </a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
